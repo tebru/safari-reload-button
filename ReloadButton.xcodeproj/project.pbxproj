@@ -1,0 +1,515 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3491C6152229DBF200FB3D6D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3491C6142229DBF200FB3D6D /* AppDelegate.swift */; };
+		3491C6172229DBF200FB3D6D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3491C6162229DBF200FB3D6D /* Assets.xcassets */; };
+		3491C61A2229DBF200FB3D6D /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3491C6182229DBF200FB3D6D /* MainMenu.xib */; };
+		3491C6292229DC0F00FB3D6D /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3491C6282229DC0F00FB3D6D /* Cocoa.framework */; };
+		3491C62C2229DC0F00FB3D6D /* SafariExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3491C62B2229DC0F00FB3D6D /* SafariExtensionHandler.swift */; };
+		3491C62E2229DC0F00FB3D6D /* SafariExtensionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3491C62D2229DC0F00FB3D6D /* SafariExtensionViewController.swift */; };
+		3491C6312229DC0F00FB3D6D /* SafariExtensionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3491C62F2229DC0F00FB3D6D /* SafariExtensionViewController.xib */; };
+		3491C6342229DC0F00FB3D6D /* script.js in Resources */ = {isa = PBXBuildFile; fileRef = 3491C6332229DC0F00FB3D6D /* script.js */; };
+		3491C63A2229DC0F00FB3D6D /* ReloadButton Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 3491C6262229DC0F00FB3D6D /* ReloadButton Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		3491C6442229DFC600FB3D6D /* reload.png in Resources */ = {isa = PBXBuildFile; fileRef = 3491C6432229DFC600FB3D6D /* reload.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3491C6382229DC0F00FB3D6D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3491C6092229DBF200FB3D6D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3491C6252229DC0F00FB3D6D;
+			remoteInfo = "ReloadButton Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3491C63E2229DC0F00FB3D6D /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				3491C63A2229DC0F00FB3D6D /* ReloadButton Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		3491C6112229DBF200FB3D6D /* ReloadButton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReloadButton.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3491C6142229DBF200FB3D6D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3491C6162229DBF200FB3D6D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3491C6192229DBF200FB3D6D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		3491C61B2229DBF200FB3D6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3491C61C2229DBF200FB3D6D /* ReloadButton.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ReloadButton.entitlements; sourceTree = "<group>"; };
+		3491C6262229DC0F00FB3D6D /* ReloadButton Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "ReloadButton Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3491C6282229DC0F00FB3D6D /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		3491C62B2229DC0F00FB3D6D /* SafariExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariExtensionHandler.swift; sourceTree = "<group>"; };
+		3491C62D2229DC0F00FB3D6D /* SafariExtensionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariExtensionViewController.swift; sourceTree = "<group>"; };
+		3491C6302229DC0F00FB3D6D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/SafariExtensionViewController.xib; sourceTree = "<group>"; };
+		3491C6322229DC0F00FB3D6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3491C6332229DC0F00FB3D6D /* script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = script.js; sourceTree = "<group>"; };
+		3491C6372229DC0F00FB3D6D /* ReloadButton_Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ReloadButton_Extension.entitlements; sourceTree = "<group>"; };
+		3491C6432229DFC600FB3D6D /* reload.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = reload.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3491C60E2229DBF200FB3D6D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3491C6232229DC0F00FB3D6D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3491C6292229DC0F00FB3D6D /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3491C6082229DBF200FB3D6D = {
+			isa = PBXGroup;
+			children = (
+				3491C6132229DBF200FB3D6D /* ReloadButton */,
+				3491C62A2229DC0F00FB3D6D /* ReloadButton Extension */,
+				3491C6272229DC0F00FB3D6D /* Frameworks */,
+				3491C6122229DBF200FB3D6D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3491C6122229DBF200FB3D6D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3491C6112229DBF200FB3D6D /* ReloadButton.app */,
+				3491C6262229DC0F00FB3D6D /* ReloadButton Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3491C6132229DBF200FB3D6D /* ReloadButton */ = {
+			isa = PBXGroup;
+			children = (
+				3491C6142229DBF200FB3D6D /* AppDelegate.swift */,
+				3491C6162229DBF200FB3D6D /* Assets.xcassets */,
+				3491C6182229DBF200FB3D6D /* MainMenu.xib */,
+				3491C61B2229DBF200FB3D6D /* Info.plist */,
+				3491C61C2229DBF200FB3D6D /* ReloadButton.entitlements */,
+			);
+			path = ReloadButton;
+			sourceTree = "<group>";
+		};
+		3491C6272229DC0F00FB3D6D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3491C6282229DC0F00FB3D6D /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3491C62A2229DC0F00FB3D6D /* ReloadButton Extension */ = {
+			isa = PBXGroup;
+			children = (
+				3491C6432229DFC600FB3D6D /* reload.png */,
+				3491C62B2229DC0F00FB3D6D /* SafariExtensionHandler.swift */,
+				3491C62D2229DC0F00FB3D6D /* SafariExtensionViewController.swift */,
+				3491C62F2229DC0F00FB3D6D /* SafariExtensionViewController.xib */,
+				3491C6322229DC0F00FB3D6D /* Info.plist */,
+				3491C6332229DC0F00FB3D6D /* script.js */,
+				3491C6372229DC0F00FB3D6D /* ReloadButton_Extension.entitlements */,
+			);
+			path = "ReloadButton Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3491C6102229DBF200FB3D6D /* ReloadButton */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3491C61F2229DBF200FB3D6D /* Build configuration list for PBXNativeTarget "ReloadButton" */;
+			buildPhases = (
+				3491C60D2229DBF200FB3D6D /* Sources */,
+				3491C60E2229DBF200FB3D6D /* Frameworks */,
+				3491C60F2229DBF200FB3D6D /* Resources */,
+				3491C63E2229DC0F00FB3D6D /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3491C6392229DC0F00FB3D6D /* PBXTargetDependency */,
+			);
+			name = ReloadButton;
+			productName = ReloadButton;
+			productReference = 3491C6112229DBF200FB3D6D /* ReloadButton.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3491C6252229DC0F00FB3D6D /* ReloadButton Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3491C63B2229DC0F00FB3D6D /* Build configuration list for PBXNativeTarget "ReloadButton Extension" */;
+			buildPhases = (
+				3491C6222229DC0F00FB3D6D /* Sources */,
+				3491C6232229DC0F00FB3D6D /* Frameworks */,
+				3491C6242229DC0F00FB3D6D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ReloadButton Extension";
+			productName = "ReloadButton Extension";
+			productReference = 3491C6262229DC0F00FB3D6D /* ReloadButton Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3491C6092229DBF200FB3D6D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = Tebru;
+				TargetAttributes = {
+					3491C6102229DBF200FB3D6D = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					3491C6252229DC0F00FB3D6D = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 3491C60C2229DBF200FB3D6D /* Build configuration list for PBXProject "ReloadButton" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3491C6082229DBF200FB3D6D;
+			productRefGroup = 3491C6122229DBF200FB3D6D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3491C6102229DBF200FB3D6D /* ReloadButton */,
+				3491C6252229DC0F00FB3D6D /* ReloadButton Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3491C60F2229DBF200FB3D6D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3491C6172229DBF200FB3D6D /* Assets.xcassets in Resources */,
+				3491C61A2229DBF200FB3D6D /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3491C6242229DC0F00FB3D6D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3491C6312229DC0F00FB3D6D /* SafariExtensionViewController.xib in Resources */,
+				3491C6442229DFC600FB3D6D /* reload.png in Resources */,
+				3491C6342229DC0F00FB3D6D /* script.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3491C60D2229DBF200FB3D6D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3491C6152229DBF200FB3D6D /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3491C6222229DC0F00FB3D6D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3491C62E2229DC0F00FB3D6D /* SafariExtensionViewController.swift in Sources */,
+				3491C62C2229DC0F00FB3D6D /* SafariExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3491C6392229DC0F00FB3D6D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3491C6252229DC0F00FB3D6D /* ReloadButton Extension */;
+			targetProxy = 3491C6382229DC0F00FB3D6D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3491C6182229DBF200FB3D6D /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3491C6192229DBF200FB3D6D /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		3491C62F2229DC0F00FB3D6D /* SafariExtensionViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3491C6302229DC0F00FB3D6D /* Base */,
+			);
+			name = SafariExtensionViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3491C61D2229DBF200FB3D6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3491C61E2229DBF200FB3D6D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		3491C6202229DBF200FB3D6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ReloadButton/ReloadButton.entitlements;
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = S8YBECL32Q;
+				INFOPLIST_FILE = ReloadButton/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = net.Tebru.ReloadButton;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		3491C6212229DBF200FB3D6D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ReloadButton/ReloadButton.entitlements;
+				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = S8YBECL32Q;
+				INFOPLIST_FILE = ReloadButton/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = net.Tebru.ReloadButton;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
+		3491C63C2229DC0F00FB3D6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "ReloadButton Extension/ReloadButton_Extension.entitlements";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = S8YBECL32Q;
+				INFOPLIST_FILE = "ReloadButton Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "net.Tebru.ReloadButton.ReloadButton-Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		3491C63D2229DC0F00FB3D6D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "ReloadButton Extension/ReloadButton_Extension.entitlements";
+				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = S8YBECL32Q;
+				INFOPLIST_FILE = "ReloadButton Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "net.Tebru.ReloadButton.ReloadButton-Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3491C60C2229DBF200FB3D6D /* Build configuration list for PBXProject "ReloadButton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3491C61D2229DBF200FB3D6D /* Debug */,
+				3491C61E2229DBF200FB3D6D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3491C61F2229DBF200FB3D6D /* Build configuration list for PBXNativeTarget "ReloadButton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3491C6202229DBF200FB3D6D /* Debug */,
+				3491C6212229DBF200FB3D6D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3491C63B2229DC0F00FB3D6D /* Build configuration list for PBXNativeTarget "ReloadButton Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3491C63C2229DC0F00FB3D6D /* Debug */,
+				3491C63D2229DC0F00FB3D6D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3491C6092229DBF200FB3D6D /* Project object */;
+}
